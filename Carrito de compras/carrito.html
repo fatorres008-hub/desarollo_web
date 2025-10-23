@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras SNAPS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS\stylecarrito.css">
+</head>
+<body class="bg-light">
+    <!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-spa me-2"></i>S N A P S
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+      <!-- Botones del carrito y menú -->
+      <div class="d-flex">
+        <button class="btn btn-outline-light me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge bg-danger" id="contador-carrito">0</span>
+        </button>
+        
+        <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- HERO -->
+<section class="hero text-white text-center d-flex align-items-center justify-content-center mb-4">
+  <div class="container">
+    <h1 class="display-4">S N A P S</h1>
+    <p class="lead">Las gorras más originales.</p>
+    <a href="#productos" class="btn btn-primary btn-lg">Ver Productos</a>
+  </div>
+</section>
+<!-- CONTENEDOR DE PRODUCTOS -->
+  <div class="container py-4" id="productos">
+    <h1 class="text-center mb-4">S N A P S</h1>
+ 
+    <div class="row">
+      <!-- Productos -->
+      <div class="col-md-8">
+        <div class="row g-3">
+          <!-- Card Producto 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG\Baez.png" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Rescue</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Rescue')">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG\Crime Life.png" class="card-img-top" alt="Producto 2" width="210" height="240">
+              <div class="card-body">
+                <h5 class="card-title">Shampoo Organic</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Shampoo Organic')">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG\Dandy Hats.png" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Shampoo Hidratante</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Shampoo Hidratante')">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG\MZ Hats.png" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                <h5 class="card-title">Shampoo Nutritivo</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Shampoo Nutritivo')">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 5 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG\MZ Hats (2).png" class="card-img-top" alt="Producto 5">
+              <div class="card-body">
+                <h5 class="card-title">Acondicionador</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Acondicionador')">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Card Producto 6 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG\Wangel Caps.png" class="card-img-top" alt="Producto 6">
+              <div class="card-body">
+                <h5 class="card-title">Acondicionador 5</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Acondicionador 6')">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
