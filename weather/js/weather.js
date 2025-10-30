@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const weatherDataDiv = document.getElementById('weather-data');
     const errorMessage = document.getElementById('error-message');
 
-    const API_KEY = 'TU_API_KEY'; 
+    const API_KEY = '133dc08805adc6dea1ff473965ffe69d'; 
     const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 
     const fetchWeather = async (city) => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         forecastDiv.innerHTML = '<h2>Pronóstico para los próximos días</h2>';
         weatherDataDiv.style.display = 'none';
 
-        if (!API_KEY || API_KEY === 'TU_API_KEY') {
+        if (!API_KEY || API_KEY === '133dc08805adc6dea1ff473965ffe69d') {
             console.warn('API key de OpenWeatherMap no configurada.');
             return;
         }
